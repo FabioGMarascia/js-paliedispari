@@ -1,7 +1,7 @@
 M-1 PALINDROMA
 
 -  Chiedere all'utente una parola tramite prompt
--  Creare un ciclo che scorra la parola, una funzione che la inverta e un controllo per capire se è uguale a quella iniziale o meno
+-  Creare un ciclo che scorra la parola, una funzione che la inverta con un controllo per capire se è uguale a quella iniziale o meno
 
 M-2 PARI E DISPARI
 
