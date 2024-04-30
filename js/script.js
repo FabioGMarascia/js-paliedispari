@@ -12,9 +12,18 @@
 // console.log(result);
 
 // M-2 PARI E DISPARI
-const user_bet = prompt(`Il risultato sarà pari o dispari?`);
+let user_bet;
 let user_number;
 let control = true;
+
+while (control) {
+	user_bet = prompt(`Il risultato sarà pari o dispari?`);
+	if (user_bet == `pari` || user_bet == `dispari`) {
+		control = false;
+	}
+}
+
+control = true;
 
 while (control) {
 	user_number = parseInt(prompt(`Scegli un numero da 1 a 5`));
