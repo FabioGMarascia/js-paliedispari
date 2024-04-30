@@ -13,7 +13,16 @@
 
 // M-2 PARI E DISPARI
 const user_bet = prompt(`Il risultato sarà pari o dispari?`);
-const user_number = parseInt(prompt(`Scegli un numero da 1 a 5`));
+let user_number;
+let control = true;
+
+while (control) {
+	user_number = parseInt(prompt(`Scegli un numero da 1 a 5`));
+	if (user_number >= 1 && user_number < 6) {
+		control = false;
+	}
+}
+
 const pc_number = randomNumber();
 const sum = user_number + pc_number;
 const odd_or_even = oddOrEven(sum);
